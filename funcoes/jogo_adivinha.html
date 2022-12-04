@@ -1,77 +1,57 @@
 <meta charset="UTF-8">
-<<<<<<< Updated upstream
-=======
-
-<h1>Acerte o Nº</h1>     
+     
  <img src="https://media1.giphy.com/media/X3vW3IU56PGEtjkh17/200.webp?cid=790b7611qtzny2oyv88q3wygfi5ghzl87iai7825953arjhs&rid=200.webp&ct=s" >
  
->>>>>>> Stashed changes
 <script>
 
     function pulaLinha() {
 
         document.write("<br>");
-<<<<<<< Updated upstream
     }
-=======
-        document.write("<br>");
-}
->>>>>>> Stashed changes
 
     function mostra(frase) {
 
         document.write(frase);
         pulaLinha();
-<<<<<<< Updated upstream
     }
 
-    var numeroPensado = Math.round(Math.random() * 100);
+    var numeroPensado = Math.round(Math.random() * 10);
 
-    var chute = parseInt(prompt("Já pensei. Qual você acha que é?"));
+    var tentativas = 1;
 
-    if(chute == numeroPensado) {
+    while(tentativas <= 3) {
 
-        mostra("Uau! Você acertou, pois eu pensei no " + numeroPensado);
-    } else {
+        var chute = parseInt(prompt("Digite seu chute!"));
 
-        mostra("Você errou! Eu tinha pensado no " + numeroPensado);
-    }
-</script>
-=======
-}
+        if(chute == numeroPensado) {
 
-var numeroPensado = Math.round( Math.random() * 100);
+            mostra("Você acertou,o número pensado era ! " + numeroPensado);
+            break;
 
-var chute = parseInt(prompt("digite seu chute!"));
+        }else {
 
-if(chute == numeroPensado) {
-    mostra("Você acertou!");
-} else{
-    mostra("Você errou, o numero pensado foi " + numeroPensado);
-}
+            mostra("Você errou"); 
+
+     }
+        tentativas++;
+   }
+
 
 </script>
 
 <style>
-    html {
-        font-family: Verdana, Geneva, Tahoma, sans-serif;
-        padding: 100px;
-        font-size: 10vh;
-        text-align: center;
-        background-color: #f7e70cf8;
 
-    }
-
-    h1 {
-        padding: 0;
-        margin: 0 auto;
-        text-align: center;
-    }
-
-    img {
-        display: flex;
-        padding: 0px;
-    }
+ html {
+    background-color: rgb(255, 217, 0);
+    font-size: 10vh;
+    font-family: monospace;
     
+ }
+
+ h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+
 </style>
->>>>>>> Stashed changes

@@ -1,0 +1,61 @@
+<meta charset="UTF-8">
+<h1>Adivinha 2</h1>
+<img src="https://media1.giphy.com/media/X3vW3IU56PGEtjkh17/200.webp?cid=790b7611qtzny2oyv88q3wygfi5ghzl87iai7825953arjhs&rid=200.webp&ct=s" >
+
+<input/>
+<button>Faça seu chute!</button>
+ 
+<script>
+
+    var segredos = [5, 6, 13, 4];
+
+    var input = document.querySelector("input");
+        input.focus();
+
+    function verifica() {
+
+        for(var posição = 0; posicao < 4; posicao++) {
+
+         if(input.value == segredo) {
+        alert("Você ACERTOU!");
+        } else {
+        alert("Você ERROU!!!!!!!!");
+    }    
+     }
+
+        input.value = "";
+           input.focus(); 
+
+    var button = document.querySelector("button");
+
+    button.onclick = verifica;
+
+</script>
+
+<style>
+
+    html {
+       background-color: rgb(255, 217, 0);
+       font-size: 10vh;
+       font-family: monospace;
+       
+    }
+   
+    h1 {
+        font-size: 15vh;
+       text-align: center;
+       font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+
+    input, button {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center;
+        font-size: 25px;
+        display: flex;
+        align-items: center;
+        margin: 10px;
+    }
+
+
+   </style>
+   
