@@ -1,0 +1,57 @@
+<meta charset="UTF-8">
+     
+ <img src="https://media1.giphy.com/media/X3vW3IU56PGEtjkh17/200.webp?cid=790b7611qtzny2oyv88q3wygfi5ghzl87iai7825953arjhs&rid=200.webp&ct=s" >
+ 
+<script>
+
+    function pulaLinha() {
+
+        document.write("<br>");
+    }
+
+    function mostra(frase) {
+
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroPensado = Math.round(Math.random() * 10);
+
+    var tentativas = 1;
+
+    while(tentativas <= 3) {
+
+        var chute = parseInt(prompt("Digite seu chute!"));
+
+        if(chute == numeroPensado) {
+
+            mostra("Você acertou,o número pensado era ! " + numeroPensado);
+            break;
+
+        }else {
+
+            mostra("Você errou"); 
+
+     }
+        tentativas++;
+   }
+
+
+</script>
+
+<style>
+
+ html {
+    background-color: rgb(255, 217, 0);
+    font-size: 10vh;
+    font-family: monospace;
+    
+ }
+
+ h1 {
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+
+</style>

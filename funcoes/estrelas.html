@@ -1,0 +1,41 @@
+    <meta charset="UTF-8">
+        
+    
+    <script>
+
+        function pulaLinha() {
+
+            document.write("<br>");
+        }
+
+        function mostra(frase) {
+
+            document.write(frase);
+            pulaLinha();
+        }
+
+        for(var linha = 1; linha <= 3 ; linha++) {
+        
+            
+            for( var coluna = 1; coluna <= 10; coluna++ ) {
+                document.write("*");
+            }
+            pulaLinha();
+        }
+
+
+    </script>
+
+
+    <style>
+
+        html {
+        background-color: rgb(82, 231, 62);
+        font-size: 10vh;
+        font-family: monospace;
+        text-align: center;
+        color: aliceblue;
+        
+        }
+
+    </style>

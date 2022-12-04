@@ -26,7 +26,23 @@ var pesoInformado = prompt(nome +" ,Informe seu peso");
 
 var imc = calculaImc(alturaInformada, pesoInformado)
 
-document.write(nome + " ,o seu  IMC é " + imc);
+mostra(nome + " ,o seu  IMC é " + imc);
+
+if(imc < 18.5) {
+
+    mostra(nome + "você esta a baixo do recomendado");
+}
+
+if(imc > 35){
+
+    mostra(nome + " ,você esta acima do recomendado");
+}
+
+if (imc >= 18.5 && imc <= 35) {
+    
+        mostra(nome + " o sei IMC esta excelente");
+
+}
 
 
 </script> 
